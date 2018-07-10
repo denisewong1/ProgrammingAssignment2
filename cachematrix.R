@@ -4,6 +4,9 @@
 ## The pair of functions calculates the inverse of a matrix.  If the inverse has been
 ## calculated and the matrix has not changed, the cacheSolve matrix will return the last
 ## (cached value) of the matrix.  
+## The purpose of this function is to cache the inverse of the matrix so that it saves time
+## later on in repeating the inverse calculation which is computationally intensive.
+
 ## to run makeCacheMatrix/cacheSolve pair in run-time, copy the following code and remove ## in r prompt
 ## xmatrix <- makeCacheMatrix(matrix(1:4,2,2))
 ## xmatrix$get()                # retrieve the value of x which is matrix containing 1:4
